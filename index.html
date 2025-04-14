@@ -4,112 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Library</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-            background: linear-gradient(to bottom, #87CEEB, #E0F6FF);
-        }
 
-        .container {
-            position: relative;
-            height: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-top: 40px;
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-      
-        .cloud {
-            position: absolute;
-            background: white;
-            border-radius: 80px;
-            opacity: 0.10;
-        }
-
-        .cloud:before, .cloud:after {
-            content: '';
-            position: absolute;
-            background: white;
-            border-radius: 70%;
-        }
-
-        .cloud1 {
-            width: 200px;
-            height: 90px;
-            top: 30px;
-            animation: moveCloud 10s linear infinite;
-        }
-
-        .cloud1:before {
-            width: 100px;
-            height: 100px;
-            top: -50px;
-            left: 10px;
-        }
-
-        .cloud1:after {
-            width: 120px;
-            height: 120px;
-            top: -70px;
-            right: 10px;
-        }
-
-        .cloud2 {
-            width: 100px;
-            height: 30px;
-            top: 200px;
-            animation: moveCloud 20s linear infinite;
-            animation-delay: -5s;
-        }
-
-        .cloud2:before {
-            width: 500px;
-            height: 500px;
-            top: -25px;
-            left: 5px;
-        }
-
-        .cloud2:after {
-            width: 60px;
-            height: 60px;
-            top: -35px;
-            right: 5px;
-        }
-
-        @keyframes moveCloud {
-            0% {
-                left: -300px;
-            }
-            100% {
-                left: 100%;
-            }
-        }
-    </style>
 </head>
 <body style="background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnhxZzd6eGRpYnJwaHRqd2htcTZ4NmQ3dXlubGs3N29iYTU0ZDhqMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/VYvYnTWXcNIItfmHcb/giphy.gif'); 
              background-size: cover; 
              background-position: center; 
              background-repeat: no-repeat;">
-
-    <div class="container">
-        <h3>Photo Library</h3>
-        <form class="login-form">
-            <input type="text" placeholder="User ID" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-        <div class="cloud cloud1"></div>
-        <div class="cloud cloud2"></div>
-    </div>
 </body>
 </html>
